@@ -1,0 +1,51 @@
+@import "_color.scss";
+@import "_typography.scss";
+@import "_mixin.scss";
+@import "_responsive.scss";
+/*
+    footer
+*/
+
+.footer {
+    text-align: center;
+    margin: auto;
+}
+
+.footer-wrapper {
+    padding-bottom: 30px;
+    background-color: #ECECEC;
+}
+
+.footer-heading {
+    font-weight: normal;
+    p {
+        font-size: 1.0rem;
+        padding-top: 42px;
+        @include sp {
+            padding-top: 20px;
+        }
+    }
+    a {
+        color:#4C8ABF;
+    }
+}
+
+.footer-icon {
+    display: inline-flex;
+    color: #ffffff;
+    padding-top: 13px;
+}
+
+.footer-bottom {
+    font-weight: normal;
+    p {
+        font-size: 1.0rem;
+        padding-top: 31px;
+    }
+    a {
+        color: #4C8ABF;
+    }
+}
+/*
+    footer end
+*/

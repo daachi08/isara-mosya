@@ -1,0 +1,74 @@
+// ミックスインの定義
+@mixin btn-form {
+    background-color: #DA6B64;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 14px 40px;
+	display: inline-block;
+}
+
+@mixin icon-form {
+    border-radius: 5px;
+    padding: 0px 6px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    height: 20px;
+}
+
+@mixin brackets-form {
+    content:'';
+    width: 45px;
+    height: 48px;
+    position: absolute;
+    display: inline-block;
+}
+
+@mixin brackets-form_left {
+    border-left: solid 3px #EBB94D;
+    border-top: solid 3px #EBB94D;
+    top: 34%;
+    left: 14%;
+}
+
+@mixin brackets-form_right {
+    border-right: solid 3px #EBB94D;
+    border-bottom: solid 3px #EBB94D;
+    bottom:-18%;
+    right: 13.5%;
+}
+
+@mixin circle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EBB94D;
+    color: #ffffff;
+    line-height: 80px;
+    position: relative;
+    top: -39px;
+    
+}
+
+@mixin background {
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;  
+}
+
+
+
+
+
+
+ // float 解除
+ @mixin clear {
+
+ 	&::after {
+ 		content: "";
+ 		display: block;
+ 		clear: both;
+ 	}
+ }
